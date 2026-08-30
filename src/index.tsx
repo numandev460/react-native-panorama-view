@@ -1,1 +1,2 @@
-export { multiply } from './multiply';
+export { PanoramaView, default } from './PanoramaView';
+export type { PanoramaViewProps } from './PanoramaView';

@@ -1,12 +1,12 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-panorama-view';
+import { View, StyleSheet } from 'react-native';
+import { PanoramaView } from 'react-native-panorama-view';
 
-const result = multiply(3, 7);
+const panoramaImage = require('./assets/panorama.jpg');
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <PanoramaView image={panoramaImage} style={styles.panorama} />
     </View>
   );
 }
@@ -14,7 +14,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    padding: 24,
+  },
+  panorama: {
+    borderRadius: 12,
   },
 });

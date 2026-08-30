@@ -42,7 +42,10 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "panorama",
+    "360",
+    "equirectangular"
   ],
   "repository": {
     "type": "git",
